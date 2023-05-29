@@ -16,15 +16,71 @@ body{
     align-items: center;
     align-content: center;
     color: #ECD931;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;  
+    justify-content: space-around;
+}
+
+.tema, .login{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.navbar i{
+    font-size: 23px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+ .navbar h1{
+    margin-left: 1%;
+ }
+
+.menu a{
+    text-decoration: none;
+    color: #ECD931;
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
     
 }
 
+.menu a:hover, .navbar i:hover{
+    border-bottom: 1px solid #ECD931;;
+}
+
+.menu{
+    margin-left: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
 .navesq{
-    width: 70%;
+    width: 80%;
     height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
+}
+
+
+@media screen and (max-width: 860px) {
+    
 }
