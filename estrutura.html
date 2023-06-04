@@ -10,8 +10,20 @@
     <link href="css/navbar.css" rel="stylesheet">
 </head>
 <body>
+
+    <div class="menu2">
+        <div class="menu3">
+        <h1>MARMOL</h1>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Agendamento de Horário</a>
+            <a href="#">Contato</a>
+            <a href="#">Alterar Tema</a>
+            <a href="#">Fazer Cadastro</a>
+        </div>
+    </div>
     <div class="navbar">
-        <div class="navesq">
+        <div class="navesq" id="menu">
             <h1>MARMOL</h1>
             <div class="menu">
                 <a href="#">Serviços</a>
@@ -22,7 +34,13 @@
         </div>
         <div class="tema"><i class="fa-solid fa-paintbrush"></i></div>
         <div class="login"><i class="fa-solid fa-user"></i></div>
+        <div class="tracos" onclick="Menu();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div> 
     </div>
-
+<script src="js/navbar.js"></script>
 </body>
 </html>

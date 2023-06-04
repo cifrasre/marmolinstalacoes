@@ -54,11 +54,35 @@ body{
     align-content: center;
     justify-content: center;
     justify-items: center;
-    
+    transition: .3s;
+}
+
+.menu3 a{
+    text-decoration: none;
+    color: #ECD931;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-left: 5%;
+    transition: .2s;
+}
+
+.menu3 a:hover{
+    background-color: #373737;
+    border-left: 1px solid #ECD931;
+}
+
+.menu2 h1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
 
 .menu a:hover, .navbar i:hover{
-    border-bottom: 1px solid #ECD931;;
+    border-bottom: 1px solid #ECD931;
 }
 
 .menu{
@@ -79,8 +103,79 @@ body{
     align-items: center;
     align-content: center;
 }
+.tracos{
+    display: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-right: 20px;
+}
 
+.tracos span{   
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #ECD931;
+  border-radius: 6px;
+  z-index: 1;
+  transform-origin: 0 0;
+  transition: 0.4s;
+  outline: none;}
+
+.tracos:hover span:nth-child(2){
+    transform: translateX(10px);
+    background-color: #707070;
+}
+
+.tracos.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.tracos.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.tracos.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.tracos.is-active:hover span{
+    background-color: #707070;
+}
+
+.menu3{
+    position: fixed;
+    left:0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+    height: 100vh;
+    color: #ECD931;
+    font-family: 'Poppins', sans-serif;  
+    width: 300px
+}
+
+.menu2{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0,0, 0.4);
+    overflow: auto;
+    z-index: 1;
+    position: fixed;
+}
 
 @media screen and (max-width: 860px) {
-    
+    .tracos{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .navbar i{
+        display: none;
+    }
 }
