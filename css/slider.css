@@ -26,5 +26,40 @@
     width: 20%;
     border-radius: 20px;
     background-color: #707070;
-    height: 150px;
+    height: 140px;
 }
+
+.divslider h2{
+    color: #ECD931;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.divslider h2:hover + .barra{
+    animation: linha .5s forwards;
+}
+
+.barra{
+    margin-top: -20px;
+    width: 00%;
+    border-bottom: 1px solid #ECD931;
+    
+}
+
+.titulosli{
+    width: 25%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+@keyframes linha{
+    0%{ width: 0;}
+    100%{width: 100%;}
+    }
