@@ -11,8 +11,11 @@
 .sliderg{
     width: 80%;
     border-radius: 30px;
-    background-color: #707070;
+    background-image: url('../img/slider/1.jpg');
+    background-size: cover;
     height: 500px;
+    cursor: pointer;
+    transition: .5s;
 }
 
 .visor{
@@ -25,11 +28,32 @@
 .sliderp{
     width: 20%;
     border-radius: 20px;
-    background-color: #707070;
     height: 140px;
+    cursor: pointer;
 }
 
-.divslider h2{
+.sliderp:nth-child(1){
+    background-image: url('../img/slider/1.jpg');
+    background-size: cover;
+}
+
+.sliderp:nth-child(2){
+    background-image: url('../img/slider/2.jpg');
+    background-size: cover;
+}
+
+.sliderp:nth-child(3){
+    background-image: url('../img/slider/3.jpg');
+    background-size: cover;
+}
+
+.sliderp:nth-child(4){
+    background-image: url('../img/slider/4.jpg');
+    background-size: cover;
+}
+
+
+.titulosli h2{
     color: #ECD931;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -37,7 +61,7 @@
     cursor: pointer;
 }
 
-.divslider h2:hover + .barra{
+.titulosli h2:hover + .barra{
     animation: linha .5s forwards;
 }
 

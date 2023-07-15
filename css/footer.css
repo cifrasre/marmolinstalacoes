@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    background: linear-gradient(to right, #00093c, #2d0b00);
+    background: linear-gradient(to right, #382f05, #0a0800);
     color: #fff;
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
@@ -43,9 +43,14 @@ footer{
     margin: 20px 0
 }
 
+ul{
+    padding: 0;
+}
+
 ul li{
     list-style: none;
     margin-bottom: 12px;
+
 }
 
 ul li a{
@@ -98,4 +103,8 @@ footer form button .fa-solid{
     background-color: #fff;
     margin-right: 15px;
     cursor: pointer
+}
+
+.coluna p{
+    text-align: justify;
 }
