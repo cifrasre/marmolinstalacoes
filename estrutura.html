@@ -10,6 +10,7 @@
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/slider.css" rel="stylesheet">
     <link href="css/responsivo.css" rel="stylesheet">
+    <link href="css/calendario.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -82,8 +83,182 @@
 <div class="divagend">
 <div class="titulosli">
     <h2>Agendamento de Horário</h2>
+    
     <span class="barra" id="barra"></span>
     </div>
+<br><br>
+<div class="lado2">
+	<span class="fa fa-angle-double-left" id="esquerda"></span>
+	<span class="fa fa-angle-double-left" id="esquerda2" onclick="abrir3();"></span>
+	<span class="fa fa-angle-double-left" id="esquerda3" onclick="abrir4();"></span>
+	<span class="fa fa-angle-double-right" id="direita" onclick="abrir();"></span>
+	<span class="fa fa-angle-double-right" id="direita2" onclick="abrir2();"></span>
+	<span class="fa fa-angle-double-right" id="direita3" onclick="abrir5();"></span>
+</div>
+
+	<div class="calendario activido" id="primeiro">
+		<div class="data">
+			<h3>Abril</h3>
+			<div class="dias" id="dia">
+				<div class="dia"><b>D</b></div>
+				<div class="dia"><b>S</b></div>
+				<div class="dia"><b>T</b></div>
+				<div class="dia"><b>Q</b></div>
+				<div class="dia"><b>Q</b></div>
+				<div class="dia"><b>S</b></div>
+				<div class="dia"><b>S</b></div>
+</div>
+</div>
+</div>
+
+<div class="mytabs activido"  id="primeiro1">
+	<div class="numero2"></div>
+	<div class="numero2"></div>
+	<div class="numero2"></div>
+	<div class="numero2"></div>
+	<div class="numero2"></div>
+	<div class="numero2"></div>
+	<input type="radio" id="1" name="mytabs" ><label for="1">1</label>
+	<input type="radio" id="2" name="mytabs"><label for="2">2</label>
+	<input type="radio" id="3" name="mytabs"><label for="3">3</label>
+	<input type="radio" id="4" name="mytabs"><label for="4">4</label>
+	<input type="radio" id="5" name="mytabs"><label for="5">5</label>
+	<input type="radio" id="6" name="mytabs"><label for="6">6</label>
+	<input type="radio" id="7" name="mytabs"><label for="7">7</label>
+	<input type="radio" id="8" name="mytabs"><label for="8">8</label>
+	<input type="radio" id="9" name="mytabs"><label for="9">9</label>
+	<input type="radio" id="10" name="mytabs" checked="checked"><label for="10">10</label>
+	<input type="radio" id="11" name="mytabs"><label for="11">11</label>
+	<input type="radio" id="12" name="mytabs"><label for="12">12</label>
+	<input type="radio" id="13" name="mytabs"><label for="13">13</label>
+	<input type="radio" id="14" name="mytabs"><label for="14">14</label>
+	<input type="radio" id="15" name="mytabs"><label for="15">15</label>
+	<input type="radio" id="16" name="mytabs"><label for="16">16</label>
+	<input type="radio" id="17" name="mytabs"><label for="17">17</label>
+	<input type="radio" id="18" name="mytabs"><label for="18">18</label>
+	<input type="radio" id="19" name="mytabs"><label for="19">19</label>
+	<input type="radio" id="20" name="mytabs"><label for="20">20</label>
+	<input type="radio" id="21" name="mytabs"><label for="21">21</label>
+	<input type="radio" id="22" name="mytabs"><label for="22">22</label>
+	<input type="radio" id="23" name="mytabs"><label for="23">23</label>
+	<input type="radio" id="24" name="mytabs"><label for="24">24</label>
+	<input type="radio" id="25" name="mytabs"><label for="25">25</label>
+	<input type="radio" id="26" name="mytabs"><label for="26">26</label>
+	<input type="radio" id="27" name="mytabs"><label for="27">27</label>
+	<input type="radio" id="28" name="mytabs"><label for="28">28</label>
+	<input type="radio" id="29" name="mytabs"><label for="29">29</label>
+	<input type="radio" id="30" name="mytabs"><label for="30">30</label>
+	<div class="numero2"></div>
+	  </div>
+
+
+	<!--Novembro-->
+
+	  <div class="calendario" id="segundo">
+		<div class="data">
+			<h3>Maio</h3>
+			<div class="dias" id="dia">
+				<div class="dia"><b>D</b></div>
+				<div class="dia"><b>S</b></div>
+				<div class="dia"><b>T</b></div>
+				<div class="dia"><b>Q</b></div>
+				<div class="dia"><b>Q</b></div>
+				<div class="dia"><b>S</b></div>
+				<div class="dia"><b>S</b></div>
+</div>
+</div>
+</div>
+
+<div class="mytabs" id="segundo2">
+	<div class="numero2"></div>
+	<input type="radio" id="32" name="mytabs"><label for="32">1</label>
+	<input type="radio" id="33" name="mytabs"><label for="33">2</label>
+	<input type="radio" id="34" name="mytabs"><label for="34">3</label>
+	<input type="radio" id="35" name="mytabs"><label for="35">4</label>
+	<input type="radio" id="36" name="mytabs"><label for="36">5</label>
+	<input type="radio" id="37" name="mytabs"><label for="37">6</label>
+	<input type="radio" id="38" name="mytabs"><label for="38">7</label>
+	<input type="radio" id="39" name="mytabs"><label for="39">8</label>
+	<input type="radio" id="40" name="mytabs"><label for="40">9</label>
+	<input type="radio" id="41" name="mytabs"><label for="41">10</label>
+	<input type="radio" id="42" name="mytabs"><label for="42">11</label>
+	<input type="radio" id="43" name="mytabs"><label for="43">12</label>
+	<input type="radio" id="44" name="mytabs"><label for="44">13</label>
+	<input type="radio" id="45" name="mytabs"><label for="45">14</label>
+	<input type="radio" id="46" name="mytabs"><label for="46">15</label>
+	<input type="radio" id="47" name="mytabs"><label for="47">16</label>
+	<input type="radio" id="48" name="mytabs"><label for="48">17</label>
+	<input type="radio" id="49" name="mytabs"><label for="49">18</label>
+	<input type="radio" id="50" name="mytabs"><label for="50">19</label>
+	<input type="radio" id="51" name="mytabs"><label for="51">20</label>
+	<input type="radio" id="52" name="mytabs"><label for="52">21</label>
+	<input type="radio" id="53" name="mytabs"><label for="53">22</label>
+	<input type="radio" id="54" name="mytabs"><label for="54">23</label>
+	<input type="radio" id="55" name="mytabs"><label for="55">24</label>
+	<input type="radio" id="56" name="mytabs"><label for="56">25</label>
+	<input type="radio" id="57" name="mytabs"><label for="57">26</label>
+	<input type="radio" id="58" name="mytabs"><label for="58">27</label>
+	<input type="radio" id="59" name="mytabs"><label for="59">28</label>
+	<input type="radio" id="60" name="mytabs"><label for="60">29</label>
+	<input type="radio" id="61" name="mytabs"><label for="61">30</label>
+	<input type="radio" id="62" name="mytabs"><label for="62">31</label>
+	<div class="numero2"></div>
+	  </div>
+
+<!--Dezembro-->
+
+	  <div class="calendario" id="terceiro">
+		<div class="data">
+			<h3>Junho</h3>
+			<div class="dias" id="dia">
+				<div class="dia"><b>D</b></div>
+				<div class="dia"><b>S</b></div>
+				<div class="dia"><b>T</b></div>
+				<div class="dia"><b>Q</b></div>
+				<div class="dia"><b>Q</b></div>
+				<div class="dia"><b>S</b></div>
+				<div class="dia"><b>S</b></div>
+</div>
+</div>
+</div>
+
+<div class="mytabs" id="terceiro3">
+	<div class="numero2"></div>
+	<div class="numero2"></div>
+	<div class="numero2"></div>
+	<div class="numero2"></div>
+	<input type="radio" id="63" name="mytabs"><label for="63">1</label>
+	<input type="radio" id="64" name="mytabs"><label for="64">2</label>
+	<input type="radio" id="65" name="mytabs"><label for="65">3</label>
+	<input type="radio" id="66" name="mytabs"><label for="66">4</label>
+	<input type="radio" id="67" name="mytabs"><label for="67">5</label>
+	<input type="radio" id="68" name="mytabs"><label for="68">6</label>
+	<input type="radio" id="69" name="mytabs"><label for="69">7</label>
+	<input type="radio" id="70" name="mytabs"><label for="70">8</label>
+	<input type="radio" id="71" name="mytabs"><label for="71">9</label>
+	<input type="radio" id="72" name="mytabs"><label for="72">10</label>
+	<input type="radio" id="73" name="mytabs"><label for="73">11</label>
+	<input type="radio" id="74" name="mytabs"><label for="74">12</label>
+	<input type="radio" id="75" name="mytabs"><label for="75">13</label>
+	<input type="radio" id="76" name="mytabs"><label for="76">14</label>
+	<input type="radio" id="77" name="mytabs"><label for="77">15</label>
+	<input type="radio" id="78" name="mytabs"><label for="78">16</label>
+	<input type="radio" id="79" name="mytabs"><label for="79">17</label>
+	<input type="radio" id="80" name="mytabs"><label for="80">18</label>
+	<input type="radio" id="81" name="mytabs"><label for="81">19</label>
+	<input type="radio" id="82" name="mytabs"><label for="82">20</label>
+	<input type="radio" id="83" name="mytabs"><label for="83">21</label>
+	<input type="radio" id="84" name="mytabs"><label for="84">22</label>
+	<input type="radio" id="85" name="mytabs"><label for="85">23</label>
+	<input type="radio" id="86" name="mytabs"><label for="86">24</label>
+	<input type="radio" id="87" name="mytabs"><label for="87">25</label>
+	<input type="radio" id="88" name="mytabs"><label for="88">26</label>
+	<input type="radio" id="89" name="mytabs"><label for="89">27</label>
+	<input type="radio" id="90" name="mytabs"><label for="90">28</label>
+	<input type="radio" id="91" name="mytabs"><label for="91">29</label>
+	<input type="radio" id="92" name="mytabs"><label for="92">30</label>
+	<div class="numero2"></div>
+	  </div>
 </div>
 
 <br><br><br><br>
@@ -126,6 +301,7 @@
     </footer>
 
 <script src="js/navbar.js"></script>
+<script src="js/calendario.js"></script>
 <script src="js/slider.js"></script>
 </body>
 </html>

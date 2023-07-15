@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Dócument */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+
+.divagend{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.divagend .titulosli{
+    width: 50%
+}
+
+.calendario{
+	height: 80px;
+	display: none;
+	justify-content: space-between; 
+	align-items: center;
+	}
+
+	.calendario.activido{
+		height: 80px;
+		display: flex;
+		justify-content: space-between; 
+		align-items: center;
+		}
+
+.calendario .data{
+	width: 450px;
+	padding-left: 30px;
+	box-sizing: border-box;
+    margin-top: -40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.calendario .data h3{
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+    color: #ECD931;}
+
+.calendario .data .dias{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.calendario .data .dias .dia,
+.calendario .data .dias .numero{
+	width: 55px;
+	color: #fff;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-family: 'Nunito Sans', sans-serif;
+	}
+
+.numero2{
+	width: 55px;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dias{outline: none;}
+
+.lado2{	
+		font-size: 35px;
+		font-weight: 200;
+		z-index: 1;
+        width: 420px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;}
+
+#esquerda{	color: #a7a7a7; }
+#esquerda2{	display: none; color: #fff;}
+#esquerda3{	display: none;color: #fff;}
+#direita{color: #fff;}
+#direita2{  display: none; color: #fff;}
+#direita3{  display: none; color: #a7a7a7;}
+
+
+	.mytabs {
+		display: none;
+		flex-wrap: wrap;
+		width: 450px;
+		padding-left: 30px;
+		box-sizing: border-box;	
+		z-index: 2;
+		}
+
+		.mytabs.activido {
+			display: flex;
+			flex-wrap: wrap;
+			width: 450px;
+			padding-left: 30px;
+			box-sizing: border-box;	
+			}
+	
+	.mytabs input[type="radio"] {
+		display: none;
+	}
+	.mytabs label {
+		width: 55px;
+		color: #fff;
+		height: 55px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		font-size: 25px;
+		}
+	
+	.mytabs.activido input[type='radio']:checked + label + .tab {
+		display: block;
+	}
+	
+	.mytabs input[type="radio"]:checked + label, .mytabs label:hover {
+		
+	color: #ECD931;
+	cursor: pointer;
+	border-bottom: 1px solid #ECD931;
+	
+	outline: none;
+    height: 53px;
+	}
