@@ -227,7 +227,7 @@ function updateEvents(date) {
       year === event.year
     ) {
       event.events.forEach((event) => {
-        events += `<div class="event">
+        events += `<div class="event" id="evento">
             <div class="title">
               <i class="fas fa-circle"></i>
               <h3 class="event-title">${event.title}</h3>
@@ -279,8 +279,6 @@ addEventSubmit.addEventListener("click", () => {
     return;
   }
 
-
-  //check if event is already added
   let eventExist = false;
   eventsArr.forEach((event) => {
     if (
@@ -296,7 +294,11 @@ addEventSubmit.addEventListener("click", () => {
     }
   });
   if (eventExist) {
-    alert("Event already added");
+    alert("Evento Já está Agendado");
+    return;
+  }
+  if (eventsArr > 1) {
+    alert("Data Indisponível");
     return;
   }
   const newEvent = {
@@ -344,7 +346,7 @@ addEventSubmit.addEventListener("click", () => {
 //function to delete event when clicked on event
 eventsContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("event")) {
-    if (confirm("Are you sure you want to delete this event?")) {
+    if (confirm("Deseja realmente cancelar este Agendamento?")) {
       const eventTitle = e.target.children[0].children[1].innerHTML;
       eventsArr.forEach((event) => {
         if (
