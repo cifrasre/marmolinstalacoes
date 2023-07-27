@@ -20,7 +20,7 @@ body{
     top: -70px;
     z-index: -1;
 	vertical-align: middle;
-	height: 650px;
+	height: 105vh;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -53,7 +53,7 @@ body{
     height: 60px;
     color: #ECD931;
 }
-
+ 
 .nome h4{
     font-size: 40px;
     text-transform: uppercase;
@@ -81,7 +81,30 @@ body{
     cursor: pointer;
 }
 
-
 html {
     scroll-behavior: smooth;
   }
+
+  @media screen and (max-width: 860px) {
+    .elemverb{
+        width: 90%;    
+    }
+    .texto{
+        width: 80%;   
+    }
+    .texto p{
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+  .nome h3{
+    font-size: 40px
+}
+.nome h4{
+    font-size: 30px;
+}
+.texto p{
+    font-size: 13px;
+}
+}

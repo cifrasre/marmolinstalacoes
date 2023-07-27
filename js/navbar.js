@@ -6,19 +6,17 @@ tracos.addEventListener('click', function () {
 
 
 function Menu(){
-    if (document.querySelector('.menu2').style.display == "none"){
-     document.querySelector('.menu2').style.display = "block";
-    }else{
+    if (document.querySelector('.menu2').style.display == "block"){
      document.querySelector('.menu2').style.display = "none";
+    }else{
+     document.querySelector('.menu2').style.display = "block";
     }
  }
 
 function Menuzin(x) {
-    if (x.matches) { 
       document.querySelector('.menu2').style.display = "none";
-    }
-  }
-  
+    } 
+      
   var x = window.matchMedia("(min-width: 860px)")
   Menuzin(x) 
   x.addListener(Menuzin)
